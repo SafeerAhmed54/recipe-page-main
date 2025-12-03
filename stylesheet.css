@@ -5,7 +5,6 @@
         url('assets/fonts/outfit/Outfit-VariableFont_wght.woff') format('woff'),
         url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
-    /* full variable range if supported */
     font-style: normal;
     font-display: swap;
 }
@@ -20,16 +19,20 @@
     font-display: swap;
 }
 
+html {
+    font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
-    font-size: 16px;
+    /* font-size removed from here; use html for default */
 }
 
 .recipe-section {
-    padding: 10rem 0;
+    padding: 6rem 0;
     width: 100%;
     height: fit-content;
     background-color: hsl(30, 54%, 90%);
@@ -98,7 +101,7 @@
 
 .recipe-info-prep {
     width: 100%;
-    background-color: hsl(335, 100%, 96%);
+    background-color: hsl(330, 100%, 98%);
     padding: 1.5rem;
     border-radius: 0.5rem;
 }
@@ -111,6 +114,10 @@
 
 .ul-list {
     color: hsl(30, 10%, 34%);
+}
+
+.recipe-info-prep .ul-list li::marker{
+    color: hsl(332, 51%, 32%);
 }
 
 .span-li {
@@ -134,6 +141,11 @@ li {
     font-weight: 400;
     color: hsl(14, 45%, 36%);
     margin-bottom: 0.5rem;
+}
+
+.ul-list li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
 }
 
 hr {
